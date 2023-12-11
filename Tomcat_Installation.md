@@ -2,10 +2,6 @@
 ```markdown
 # Tomcat Installation on Linux Instance
 
-
-![image](https://github.com/discover-devops/JenkinsMaven/assets/53135263/50e86983-62c4-4f28-8181-a6d0f39eaf59)
-
-
 ## Install Apache Tomcat
 
 1. Download Tomcat packages from [Tomcat Downloads](https://tomcat.apache.org/download-80.cgi) onto `/opt` on the Linux instance.
