@@ -1,4 +1,3 @@
-Tomcat Installation
 
 ```markdown
 # Tomcat Installation on Linux Instance
