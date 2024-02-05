@@ -1,5 +1,4 @@
 
-```markdown
 # Tomcat Installation on Linux Instance
 
 ## Install Apache Tomcat
