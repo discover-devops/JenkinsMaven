@@ -9,7 +9,7 @@
     <script>
         // JavaScript code to be embedded into a Facebook page
         function greetUser() {
-            var userName = prompt("Please enter your name:");
+            var userName = prompt("enter your name:");
             if (userName != null && userName != "") {
                 alert("Hello, " + userName + "! Welcome to our Facebook page!");
             }
