@@ -1,6 +1,22 @@
-    <form action="process.jsp">  
-    <input type="text" name="uname" value="Name..." onclick="this.value=''"/><br/>  
-    <input type="text" name="uemail"  value="Email ID..." onclick="this.value=''"/><br/>  
-    <input type="password" name="upass"  value="Password..." onclick="this.value=''"/><br/>  
-    <input type="submit" value="register"/>  
-    </form>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Page JavaScript</title>
+</head>
+<body>
+    <script>
+        // JavaScript code to be embedded into a Facebook page
+        function greetUser() {
+            var userName = prompt("Please enter your name:");
+            if (userName != null && userName != "") {
+                alert("Hello, " + userName + "! Welcome to our Facebook page!");
+            }
+        }
+
+        // Example usage
+        greetUser();
+    </script>
+</body>
+</html>
