@@ -1,18 +1,43 @@
- <!-- A button to open the popup form -->
-<button class="open-button" onclick="openForm()">Open Form</button>
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
-<!-- The form -->
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Login</h1>
+public class UserDetails {
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+   @NotBlank
+   private String firstName;
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+   @NotBlank
+   private String lastName;
 
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div> 
+   @NotBlank
+   @Email
+   private String email;
+
+   private boolean allowsMarketing;
+
+   // FIXME Passwords should never be stored in plain text!
+   @Size(min = 8, max = 64, message = "Password must be 8-64 char long")
+   private String password;
+
+   public String getFirstName() {return firstName;}
+
+   public void setFirstName(String firstName) {this.firstName = firstName;}
+
+   public String getLastName() {return lastName;}
+
+   public void setLastName(String lastName) {this.lastName = lastName;}
+
+   public String getEmail() {return email;}
+
+   public void setEmail(String email) {this.email = email;}
+
+   public String getPassword() {return password;}
+
+   public void setPassword(String password) {this.password = password;}
+
+   public boolean isAllowsMarketing() {return allowsMarketing;}
+
+   public void setAllowsMarketing(boolean allowsMarketing) {this.allowsMarketing = allowsMarketing;}
+
+}
