@@ -1,43 +1,23 @@
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
+ <form action="action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
 
-public class UserDetails {
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
 
-   @NotBlank
-   private String firstName;
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
 
-   @NotBlank
-   private String lastName;
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
 
-   @NotBlank
-   @Email
-   private String email;
-
-   private boolean allowsMarketing;
-
-   // FIXME Passwords should never be stored in plain text!
-   @Size(min = 8, max = 64, message = "Password must be 8-64 char long")
-   private String password;
-
-   public String getFirstName() {return firstName;}
-
-   public void setFirstName(String firstName) {this.firstName = firstName;}
-
-   public String getLastName() {return lastName;}
-
-   public void setLastName(String lastName) {this.lastName = lastName;}
-
-   public String getEmail() {return email;}
-
-   public void setEmail(String email) {this.email = email;}
-
-   public String getPassword() {return password;}
-
-   public void setPassword(String password) {this.password = password;}
-
-   public boolean isAllowsMarketing() {return allowsMarketing;}
-
-   public void setAllowsMarketing(boolean allowsMarketing) {this.allowsMarketing = allowsMarketing;}
-
-}
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 
