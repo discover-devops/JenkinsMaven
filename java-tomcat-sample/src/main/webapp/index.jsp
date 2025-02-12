@@ -1,19 +1,16 @@
- <div class="container">
-  <form action="/action_page.php">
-    <label for="usrname">Username</label>
-    <input type="text" id="usrname" name="usrname" required>
+import java.util.Scanner; // Import the Scanner class
 
-    <label for="psw">Password</label>
-  <  input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+class MyClass {
+  public static void main(String[] args) {
+    int x, y, sum;
+    Scanner myObj = new Scanner(System.in); // Create a Scanner object
+    System.out.println("Type a number:");
+    x = myObj.nextInt(); // Read user input
 
-    <input type="submit" value="Submit">
-  </form>
-</div>
+    System.out.println("Type another number:");
+    y = myObj.nextInt(); // Read user input
 
-<div id="message">
-  <h3>Password must contain the following:</h3>
-  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-  <p id="number" class="invalid">A <b>number</b></p>
-  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-</div> 
+    sum = x + y;  // Calculate the sum of x + y
+    System.out.println("Sum is: " + sum); // Print the sum
+  }
+} 
