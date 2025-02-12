@@ -1,16 +1,11 @@
-import java.util.Scanner; // Import the Scanner class
+import java.util.Scanner;  // Import the Scanner class
 
-class MyClass {
+class Main {
   public static void main(String[] args) {
-    int x, y, sum;
-    Scanner myObj = new Scanner(System.in); // Create a Scanner object
-    System.out.println("Type a number:");
-    x = myObj.nextInt(); // Read user input
+    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+    System.out.println("Enter username");
 
-    System.out.println("Type another number:");
-    y = myObj.nextInt(); // Read user input
-
-    sum = x + y;  // Calculate the sum of x + y
-    System.out.println("Sum is: " + sum); // Print the sum
+    String userName = myObj.nextLine();  // Read user input
+    System.out.println("Username is: " + userName);  // Output user input
   }
-} 
+}
