@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>We will noe Learn Pipeline as a CODE !!!</title>
+<title>We will noe Learn Pipeline as a CODE</title>
 </head>
 <body>
 
